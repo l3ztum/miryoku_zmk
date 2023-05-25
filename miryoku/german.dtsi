@@ -2,10 +2,45 @@
 
 #include "helper.h"
 
-ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
-ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
-ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
-ZMK_UNICODE_SINGLE( de_eszett,  N0, N0,  D,  F)
+ZMK_UNICODE_PAIR( de_ae,   KP_N1, KP_N3, KP_N2,  KP_N1, KP_N4, KP_N2 )
+ZMK_UNICODE_PAIR( de_oe,   KP_N1, KP_N4, KP_N8,  KP_N1, KP_N5, KP_N3 )
+ZMK_UNICODE_PAIR( de_ue,   KP_N1, KP_N2, KP_N9,  KP_N1, KP_N5, KP_N4 )
+ZMK_UNICODE_SINGLE( de_eszett,  KP_N2,  KP_N2,  KP_N5)
 
 // euro sign
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+ZMK_UNICODE_SINGLE(euro_sign, KP_N0, A, C)  // € does not work with altcodes
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+    combo_esc {
+      timeout-ms = <50>;
+      key-positions = <0 1>;
+      bindings = <&kp ESC>;
+    };
+    combo_ae {
+        timeout-ms = <50>;
+        key-positions = <10 11>;
+        bindings = <&de_ae>;
+        layers = <0>;
+    };
+    combo_ue {
+        timeout-ms = <50>;
+        key-positions = <6 7>;
+        bindings = <&de_ue>;
+        layers = <0>;
+    };
+    combo_oe {
+        timeout-ms = <50>;
+        key-positions = <7 8>;
+        bindings = <&de_oe>;
+        layers = <0>;
+    };
+    combo_sz {
+        timeout-ms = <50>;
+        key-positions = <11 12>;
+        bindings = <&de_eszett>;
+        layers = <0>;
+    };
+  };
+};
