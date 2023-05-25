@@ -30,6 +30,17 @@ MIRYOKU_LAYER_LIST
   };
 };
 
+/ {
+  combos {
+    compatible = "zmk,combos";
+	combo_esc {
+		timeout-ms = <50>;
+		key-positions = <0 1>;
+		bindings = <&kp ESC>;
+	};
+  };
+};
+
 #include "miryoku_shift_functions.dtsi"
 
 #include "miryoku_double_tap_guard.dtsi"
@@ -56,4 +67,9 @@ MIRYOKU_LAYER_LIST
   #include "miryoku_kludge_tapdelay.dtsi"
 #else
   #include "miryoku_behaviors.dtsi"
+#endif
+
+#if defined (INCLUDE_UMLAUTE)
+  #include "helper.h"
+  #include "german.dtsi"
 #endif
