@@ -19,13 +19,13 @@ U_NP,              LS(LC(LA(LGU))),   U_LT(U_FUN, DEL),  U_LT(U_SYM, TAB),  U_LT
 &kp PG_UP,         &kp HOME,          &kp UP,            &kp END,           &kp INS,           U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp PG_DN,         &kp LEFT,          &kp DOWN,          &kp RIGHT,         &u_caps_word,      U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              &u_to_U_NAV,       &u_to_U_NUM,       &kp RALT,          U_NA,              \
-U_NP,              &trans,              &kp DEL,           &kp RET,          &kp BSPC,           U_NA,              U_NA,              U_NA,              &trans,              U_NP
+U_NP,              LS(LC(LA(LGU))),   &kp DEL,           &kp RET,          &kp BSPC,           U_NA,              U_NA,              U_NA,              LS(LC(LALT)),      U_NP
 
 #define MIRYOKU_LAYER_SYM \
 &kp SINGLE_QUOTE,  &kp LT,             &kp GT,           &kp DQT,           &kp SEMI,              &kp AMPS,          &kp U_NA,          &kp LBKT,         &kp RBKT,          &kp PRCNT,      \
 &kp EXCL,          &kp MINUS,          &kp PLUS,         &kp EQUAL,         &kp HASH,              &kp PIPE,          &kp COLON,         &kp LPAR,         &kp RPAR,          &kp QMARK,      \
 &kp CARET,         &kp SLASH,          &kp ASTRK,        &kp BSLH,          U_NA,                  &kp TILDE,         &kp DLLR,          &kp LBRC,         &kp RBRC,          &kp AT,         \
-U_NP,              &trans,              U_NA,              U_NA,              U_NA,                  &kp UNDER,         &kp KP_NUM,          U_NA,          &trans,              U_NP
+U_NP,              LS(LC(LA(LGU))),    U_NA,              U_NA,              U_NA,                  &kp UNDER,         &kp KP_NUM,          U_NA,          LS(LC(LALT)),   U_NP
 
 #define MIRYOKU_LAYER_MEDIA \
 U_RGB_HUI,         U_RGB_SAI,         &kp C_VOL_UP,      U_RGB_BRI,         U_RGB_TOG,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
