@@ -28,7 +28,7 @@ U_NP,              &trans,    &kp DEL,           &kp RET,          &kp BSPC,    
 &kp SINGLE_QUOTE,  &kp LT,             &kp GT,           &kp DQT,           &kp SEMI,              &kp AMPS,          &kp U_NA,          &kp LBKT,         &kp RBKT,          &kp PRCNT,      \
 &kp EXCL,          &kp MINUS,          &kp PLUS,         &kp EQUAL,         &kp HASH,              &kp PIPE,          &kp COLON,         &kp LPAR,         &kp RPAR,          &kp QMARK,      \
 &kp CARET,         &kp SLASH,          &kp ASTRK,        &kp BSLH,          U_NA,                  &kp TILDE,         &kp DLLR,          &kp LBRC,         &kp RBRC,          &kp AT,         \
-U_NP,              &trans,               U_NA,             U_NA,              U_NA,                  &kp UNDER,         &kp KP_NUM,        U_NA,             &trans,   U_NP
+U_NP,              &trans,              U_NA,              U_NA,              U_NA,                  &kp UNDER,         &euro_sign,          U_NA,             &trans          U_NP,
 
 #define MIRYOKU_LAYER_MEDIA \
 U_RGB_HUI,         U_RGB_SAI,         &kp C_VOL_UP,      U_RGB_BRI,         U_RGB_TOG,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
