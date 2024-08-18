@@ -8,6 +8,9 @@
 #define MIRYOKU_LAYERS_FLIP
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
+#define HAS_MOUSE_KEYS
+#define HAS_MOUSE_TP
+
 #define HYP LS(LC(LA(LGUI)))
 #define MEH LS(LC(LALT))
 
