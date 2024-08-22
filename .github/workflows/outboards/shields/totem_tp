@@ -3,5 +3,5 @@
 
 outboard_repository=l3ztum/zmk-config-totem
 outboard_ref=totem_tp
-outboard_from=boards/shields/totem_tp
+outboard_from=config/boards/shields/totem_tp
 outboard_to=boards/shields/totem_tp
