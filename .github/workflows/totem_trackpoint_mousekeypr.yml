@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build totem with mousekeyspr'
+name: 'Build totem with trackpoint'
 on: workflow_dispatch
 jobs:
   build:
@@ -13,3 +13,4 @@ jobs:
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y\nCONFIG_ZMK_MOUSE=y"]'
       branches: '["infused-kim/zmk/pr-testing/mouse_ps2_module_base"]'
+      modules: '["l3ztum/zmk-config-totem/totem_tp"]'
